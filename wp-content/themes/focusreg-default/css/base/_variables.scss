@@ -1,0 +1,74 @@
+// Typography
+$base-font-family:'Rubik', sans-serif;
+$header-font-family: $base-font-family;
+
+// Font Sizes
+$small-font-size: em(14);
+$base-font-size: em(18); //This should always stay at em(16). Do not change under any circumstance. 
+$medium-font-size: em(21);
+$large-font-size: em(27);
+$xlarge-font-size: em(32);
+$display-font-size: em(45);
+
+
+
+// Line height
+$baseline:em(8); //Old habits die hard
+$base-line:em(8);
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
+// Other Sizes
+$base-border-radius: 0;
+$base-spacing: $base-line-height * 1em;
+$base-z-index: 0;
+
+// Colors
+$white:#ffffff;
+$black:#232323;
+$black-trans:rgba(0,0,0,.15);
+$blue: #477DCA;
+$green:#00ad49;
+$gray:#e1e1e1;
+$dark-gray: #9a9a9a;
+$medium-gray: #999;
+$light-gray: #f4f4f4;
+$red: #b50102;
+$burgundy: #952829;
+$gold: $red;
+$gold-trans:rgba(238, 200, 128, 0.5);
+@mixin default-gradient {
+	@include linear-gradient(#4f4f52, #121213);
+}
+@mixin default-light-gradient {
+	@include linear-gradient($gray, $white);
+}
+
+
+// Base Colors
+$base-color:$gray;
+$base-accent-color:$gold;
+$base-accent-color-trans:$gold-trans;
+$base-font-color: $black;
+$base-background-color: white;
+
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Border color
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: $gold;
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+
