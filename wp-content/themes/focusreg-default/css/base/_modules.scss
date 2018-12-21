@@ -23,7 +23,7 @@
     }
 
     &:before {
-        z-index: 0;
+        z-index: -1;
         content: '';
         display: block;
         position: absolute;
@@ -112,7 +112,7 @@
         }
 
         .inner-wrap-fullwidth {
-            padding-top: $baseline*2.5;
+            padding-top: 0;
             padding-bottom: $baseline*2.5;
         }
 
@@ -273,20 +273,28 @@
 }
 
 .sh-ph {
-    margin: em(12,14);
+    margin: em(10,14);
     color: white;
     text-decoration: none;
     font-size: $small-font-size;
     vertical-align: top;
     float: left;
+    background-image: url(img/ico-ph.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 37px;
+    background-size: 1.72em;
+    &:hover{
+        color: $white;
+    }
     i {
         font-style: normal;
         //display:none;
     }
 
     @include mq(medium) {
-        float: right;
         font-size: $medium-font-size;
+        margin: em(4,14) em(40);
 
         i {
             //display:inline;

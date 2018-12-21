@@ -1,6 +1,6 @@
 </div>
 <?php if(is_home()): ?>
-		<div id="#newsletterFrm" class="white-popup mfp-hide"><?php es_subbox( $namefield =  "YES", $desc = "", $group = "" ); ?></div>
+		<div id="newsletterFrm" class="white-popup mfp-hide mfp-zoom-in"><?php es_subbox( $namefield =  "No", $desc = "", $group = "" ); ?></div>
 <?php endif; ?>		
 		<?php wp_footer(); ?>
 		<?php if(get_field('before_the_body')):?>
@@ -10,17 +10,17 @@
 	<?php endif;?>
 	<?php if(is_home()): ?>
 		<script type="text/javascript">
-		/*$(window).load(function () {
+		$(window).load(function () {
       setTimeout(function(){
     $.magnificPopup.open({
      items: {
             src: '#newsletterFrm' //ID OF INLINE ELEMENT
                 },
             type:'inline',
-      mainClass: 'my-mfp-zoom-in'
+      mainClass: 'mfp-zoom-in'
             });
-     }, 500);  // equals 100 seconds
-        });*/
+     }, 1000);  // equals 100 seconds
+        });
 
        
 	</script>
