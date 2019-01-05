@@ -7,8 +7,11 @@ if( have_rows('marketing_module') ):
   while( have_rows('marketing_module') ): the_row(); ?>
 <section id="marketing" class="sm-item">
     <div class="inner-wrap-narrow">
-      <figure class="sm-item-figure">
-        <a href="marketing/index.html">
+      <figure class="sm-item-figure <?php if((get_sub_field('mm_video'))): ?>sm-item-video<?php endif; ?>">
+        <?php if((get_sub_field('mm_video'))): ?> 
+       <div class="mm-video">   <?php the_sub_field('mm_video'); ?> </div>
+          <?php else: ?>
+        <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
             <g>
               <path d="M403.5,75.7h-64l-8.3-22.1c-2.4-6.4-8.5-10.6-15.3-10.6h-11.4C300.6,19.7,280.3,2,256,2c-24.3,0-44.6,17.7-48.5,41h-11.4   c-6.8,0-13,4.3-15.3,10.6l-8.3,22.1h-64c-13.6,0-24.6,11-24.6,24.6v385.1c0,13.6,11,24.6,24.6,24.6h295c13.6,0,24.6-11,24.6-24.6   V100.3C428.1,86.8,417,75.7,403.5,75.7z M196.1,59.4h27.1v-8.2c0-18.1,14.7-32.8,32.8-32.8c18.1,0,32.8,14.7,32.8,32.8v8.2h27.1   l18.4,49.2H177.7L196.1,59.4z M411.7,485.4c0,4.5-3.7,8.2-8.2,8.2h-295c-4.5,0-8.2-3.7-8.2-8.2V100.3c0-4.5,3.7-8.2,8.2-8.2h57.8   l-4,10.6c-1.9,5-1.2,10.7,1.9,15.1c3.1,4.4,8.1,7.1,13.5,7.1h156.6c5.4,0,10.4-2.6,13.5-7.1c3.1-4.4,3.8-10.1,1.9-15.1l-4-10.6   h57.8c4.5,0,8.2,3.7,8.2,8.2V485.4z"></path>
@@ -24,8 +27,9 @@ if( have_rows('marketing_module') ):
             </g>
           </svg>
         </a>
+      <?php endif; ?>
       </figure>
-      <div class="sm-item-container">
+      <div class="sm-item-container <?php if((get_sub_field('mm_video'))): ?>sm-item-container-video<?php endif; ?>">
         <header class="sm-item-header-wrap">
           <h2 class="sm-item-header"><?php the_sub_field('mm_section_header'); ?></h2>
           <h3 class="sm-item-subheader"><?php the_sub_field('mm_section_sub-text'); ?></h3>

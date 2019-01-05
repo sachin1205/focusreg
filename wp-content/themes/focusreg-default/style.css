@@ -2784,6 +2784,10 @@ img[name=pphLoggerImage] {
   right: 0; }
 
 /*=============== Services Module ===============*/
+@media (min-width: 40em) {
+  .mm-video {
+    margin-top: 2.5em; } }
+
 .sm-item {
   position: relative; }
   .sm-item .btn-alt, .sm-item .btn-alt-download, .sm-item .btn-alt-arrow {
@@ -2846,6 +2850,13 @@ img[name=pphLoggerImage] {
       transition: fill 0.8s ease-in-out; }
   .sm-item-figure:last-child {
     margin-right: 0; }
+  .sm-item-figure.sm-item-video {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 100%; }
+    .sm-item-figure.sm-item-video:last-child {
+      margin-right: 0; }
   @media (min-width: 40em) {
     .sm-item-figure {
       float: left;
@@ -2853,7 +2864,14 @@ img[name=pphLoggerImage] {
       margin-right: 2.3576520234%;
       width: 40.291369653%; }
       .sm-item-figure:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      .sm-item-figure.sm-item-video {
+        float: left;
+        display: block;
+        margin-right: 2.3576520234%;
+        width: 40.291369653%; }
+        .sm-item-figure.sm-item-video:last-child {
+          margin-right: 0; } }
 
 .sm-item-container {
   float: left;
@@ -2862,6 +2880,13 @@ img[name=pphLoggerImage] {
   width: 65.8807826589%; }
   .sm-item-container:last-child {
     margin-right: 0; }
+  .sm-item-container.sm-item-container-video {
+    float: left;
+    display: block;
+    margin-right: 2.3576520234%;
+    width: 100%; }
+    .sm-item-container.sm-item-container-video:last-child {
+      margin-right: 0; }
   @media (min-width: 40em) {
     .sm-item-container {
       float: left;
@@ -2870,7 +2895,14 @@ img[name=pphLoggerImage] {
       width: 48.8211739883%;
       margin-left: 8.5298043353%; }
       .sm-item-container:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      .sm-item-container.sm-item-container-video {
+        float: left;
+        display: block;
+        margin-right: 2.3576520234%;
+        width: 48.8211739883%; }
+        .sm-item-container.sm-item-container-video:last-child {
+          margin-right: 0; } }
 
 @media (min-width: 40em) {
   .sm-item-header {

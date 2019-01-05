@@ -835,7 +835,11 @@ img[name=pphLoggerImage] {
 /*=============== Services Module ===============*/
 
 .services-module {}
-
+.mm-video{
+    @include mq(medium) {
+    margin-top: $baseline*5;
+}
+}
 .sm-item {
     position: relative;
 
@@ -952,17 +956,27 @@ img[name=pphLoggerImage] {
     }
 
     @include span-columns(4 of 12);
-
+    &.sm-item-video{
+        @include span-columns(12 of 12);
+    }
     @include mq(medium) {
         @include span-columns(5 of 12);
+        &.sm-item-video{
+        @include span-columns(5 of 12);
+    }
     }
 }
 
 .sm-item-container {
     @include span-columns(8 of 12);
-
+     &.sm-item-container-video{
+        @include span-columns(12 of 12);
+    }
     @include mq(medium) {
         @include span-columns(6 of 12);
+         &.sm-item-container-video{
+        @include span-columns(6 of 12);
+    }
         @include shift(1);
         // padding:$baseline*8 $baseline*3;
     }
