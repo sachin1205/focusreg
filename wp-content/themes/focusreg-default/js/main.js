@@ -192,7 +192,7 @@ $(document).ready(function() {
 
 
 
-//Sticky Nav
+/*//Sticky Nav
 $(function() {
     //Set the height of the sticky container to the height of the nav
     //var navheight = $('.site-nav-container').height();
@@ -221,7 +221,7 @@ $(function() {
         sticky_navigation();
     });
 
-});
+});*/
 
 
 
@@ -325,4 +325,83 @@ $(document).ready(function() {
         $('.sps-item').removeClass('custom-sps');
         $(this).addClass('custom-sps');
     });
+});
+
+
+$(document).ready(function() {
+  $('.anchor-links-nav a').click(function() {
+     $('.anchor-links-nav li').removeClass('active');
+     $(this).parent('li').addClass('active');
+  });
+});
+
+$(document).ready(function() {
+    $('.anchor-links-nav a[href*=#]').bind('click', function(e) {
+        e.preventDefault(); // prevent hard jump, the default behavior
+
+        var target = $(this).attr("href"); // Set the target as variable
+
+        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top
+        }, 600, function() {
+            location.hash = target; //attach the hash (#jumptarget) to the pageurl
+        });
+
+        return false;
+    });
+});
+
+$(window).scroll(function() {
+    var scrollDistance = $(window).scrollTop();
+
+    // Show/hide menu on scroll
+    //if (scrollDistance >= 850) {
+    //    $('nav').fadeIn("fast");
+    //} else {
+    //    $('nav').fadeOut("fast");
+    //}
+  
+    // Assign active class to nav links while scolling
+    $('.jump-anchor').each(function(i) {
+        if ($(this).position().top <= scrollDistance) {
+            $('.anchor-links-nav li.active').removeClass('active');
+            $('.anchor-links-nav li').eq(i).addClass('active');
+        }
+    });
+}).scroll();
+
+
+//Sticky Nav
+$(function() {
+  var findE2_anchor = $('.anchor-links-nav').length; 
+  if(findE2_anchor >= 0){
+    console.log('anchor found');
+  //Set the height of the sticky container to the height of the nav
+  //var navheight = $('.site-nav-container').height();
+  // grab the initial top offset of the navigation 
+  var sticky_navigation_offset_top_anchor = $('.anchor-links-nav').offset().top;
+
+  // our function that decides weather the navigation bar should have "fixed" css position or not.
+  var sticky_navigation_anchor = function() {
+    var scroll_top_anchor = $(window).scrollTop(); // our current vertical position from the top
+
+    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+    // otherwise change it back to relative
+    if (scroll_top_anchor > sticky_navigation_offset_top_anchor) {
+      $('.anchor-links-nav').addClass('stuck');
+      //$('.sh-sticky-wrap').addClass('stuck').css('height',navheight);
+    } else {
+      $('.anchor-links-nav').removeClass('stuck');
+    }
+  };
+
+  // run our function on load
+  sticky_navigation_anchor();
+
+  // and run it again every time you scroll
+  $(window).scroll(function() {
+    sticky_navigation_anchor();
+  });
+}
 });

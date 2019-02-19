@@ -3761,6 +3761,44 @@ img[name=pphLoggerImage] {
 .rm-slider {
   position: relative; }
 
+.anchor-links-nav {
+  border-bottom: 1px solid #cccccc;
+  padding: 0.5em 0.625em 0;
+  text-align: center;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .anchor-links-nav li {
+    display: inline-block; }
+    .anchor-links-nav li a {
+      display: block;
+      padding: 0.625em 1.25em;
+      text-decoration: none;
+      -webkit-transition: background-color 0.1s ease-in-out;
+      -moz-transition: background-color 0.1s ease-in-out;
+      transition: background-color 0.1s ease-in-out; }
+      .anchor-links-nav li a:hover {
+        background-color: #952829;
+        color: #ffffff; }
+    .anchor-links-nav li.active a {
+      background-color: #952829;
+      color: #ffffff; }
+  @media (min-width: 60em) {
+    .anchor-links-nav.stuck {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 999;
+      padding: 0.625em 0.625em 0; } }
+
+@media (min-width: 60em) {
+  .jump-anchor {
+    padding-top: 60px !important; }
+    .jump-anchor h2 {
+      margin-top: 0; } }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";

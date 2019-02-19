@@ -2133,3 +2133,49 @@ img[name=pphLoggerImage] {
 .rm-slider{
     position:relative;
 }
+
+.anchor-links-nav {
+    border-bottom: 1px solid #cccccc;
+    padding: em(8) em(10) 0;
+    text-align: center;
+    @include transition (all .1s ease-in-out);
+    li {
+        display: inline-block;
+        //margin-bottom: em(10);
+        a {
+            display: block;
+            padding: em(10) em(20);
+            text-decoration: none;
+            @include transition (background-color .1s ease-in-out);
+            &:hover {
+                background-color:$burgundy;
+                color: $white;
+            }
+        }
+        &.active {
+            a {
+              background-color:$burgundy;
+              color: $white;  
+          }
+      }
+  }
+  @include mq(large) {
+    &.stuck{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: $white;
+        z-index: 999;
+        padding: em(10) em(10) 0;
+    }
+}  
+}
+.jump-anchor {
+    @include mq(large) {
+        padding-top: 60px !important;
+        h2 {
+            margin-top: 0;
+        }
+    }
+}
