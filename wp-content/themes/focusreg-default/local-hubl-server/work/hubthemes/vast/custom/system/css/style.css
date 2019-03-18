@@ -3799,6 +3799,37 @@ img[name=pphLoggerImage] {
     .jump-anchor h2 {
       margin-top: 0; } }
 
+.exit-intet-module {
+  border: 5px solid #9b9b9b; }
+  .exit-intet-module.white-popup {
+    max-width: 600; }
+
+.ei-box {
+  padding: 20px; }
+  .ei-box .btn, .ei-box button,
+  .ei-box input[type="submit"], .ei-box .btn-download, .ei-box .btn-arrow, .ei-box .product-grid-item-link {
+    color: #fff; }
+  .ei-box h3 {
+    font-style: italic;
+    color: #232323;
+    font-size: 18px;
+    font-weight: bold; }
+  .ei-box .ei-content {
+    margin-bottom: 1.875em; }
+  .ei-box .ei-text {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top; }
+    .ei-box .ei-text p {
+      font-size: 16px; }
+  .ei-box .ei-image {
+    width: 39%;
+    display: inline-block;
+    vertical-align: middle; }
+  .ei-box .ei-other-res {
+    border-top: 1px solid #9b9b9b;
+    padding: 1.875em; }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";

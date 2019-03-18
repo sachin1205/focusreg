@@ -55,4 +55,19 @@ c6.705,0,10.371-5.554,10.371-10.371c0-0.158-0.003-0.316-0.01-0.472C16.735,4.82,1
       </div>
     
   </div>
+  <div id="exit-intet-module" class="exit-intet-module white-popup mfp-hide mfp-zoom-in">
+    <div class="ei-box">
+      <h3>Buying an apartment in NYC is unlike <br/>anything else.</h3>
+      <div class="ei-content">
+        <div class="ei-text">
+          <p>While trying to find the perfect home, there are many other hurdles in the way such as identifying building types and getting board approval. Our team has put together a comprehensive guide to help you along the way in your buying journey.</p>
+          <a href="https://www.focusreg.com/nyc-buyer-guide/" class="btn">DOWNLOAD NOW -FREE</a>
+        </div>
+        <div class="ei-image"><img src="https://www.focusreg.com/wp-content/uploads/NEW-transparentbg-3D-Cover_Buyers-Guide.png" alt="NYC-Guide"></div>
+      </div>
+      <div class="ei-other-res">
+        <i>CLICK <a target="_blank" href="https://www.focusreg.com/resources/">HERE</a> FOR OTHER FREE RESOURCES</i>
+      </div>
+    </div>
+  </div>
 </footer>
