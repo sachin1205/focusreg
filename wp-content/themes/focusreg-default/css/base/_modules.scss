@@ -2216,3 +2216,29 @@ img[name=pphLoggerImage] {
         padding: em(30);
     }
 }
+.lp-content{
+    @include mq(large){
+        float: left;
+        width: 59%; 
+    }
+}
+.lp-form{
+    .gform_wrapper{
+        background-color: $dark-gray;
+    }
+    form{
+        label{
+            color: white;
+            font-weight: normal !important;
+        }
+    }
+    h3{
+        color: $red;
+        font-weight: normal;
+        font-style: italic;
+    }
+    @include mq(large){
+        float: right;
+        width: 38%
+    }
+}

@@ -3830,6 +3830,28 @@ img[name=pphLoggerImage] {
     border-top: 1px solid #9b9b9b;
     padding: 1.875em; }
 
+@media (min-width: 60em) {
+  .lp-content {
+    float: left;
+    width: 59%; } }
+
+.lp-form .gform_wrapper {
+  background-color: #9a9a9a; }
+
+.lp-form form label {
+  color: white;
+  font-weight: normal !important; }
+
+.lp-form h3 {
+  color: #b50102;
+  font-weight: normal;
+  font-style: italic; }
+
+@media (min-width: 60em) {
+  .lp-form {
+    float: right;
+    width: 38%; } }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
