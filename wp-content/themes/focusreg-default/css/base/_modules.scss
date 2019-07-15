@@ -2242,3 +2242,116 @@ img[name=pphLoggerImage] {
         width: 38%
     }
 }
+
+
+/* Southbridge Towers  */
+
+
+.page-id-2188 {
+    .para {
+        color: #c13329;
+    }
+    .imgmap {
+        width: 22em;
+        border: 2px solid black;
+        padding-right: 1.5em;
+        padding-top: 1.5em;
+    }
+    .ptitle {
+        color: #c13329;
+        text-align: center;
+        font-size: 1.4em;
+        margin: 20px 48px;
+    }
+    hr {
+        margin: 3.5em 0 0;
+        border-bottom: 2px solid #000000;
+    }
+    .st-heading {
+            text-align: center;
+            text-transform: uppercase;
+            color: #c13329;
+            margin-top: 40px;
+            font-family: initial;
+            margin-bottom: 0;
+             @include mq(medium){
+            font-size: em(70);
+        }
+    }
+    .wpcf7,
+    .gform_wrapper {
+        background-color: #727272;
+        padding: 1em 2em !important;
+        max-width: 73em !important;
+        overflow: hidden;
+        border-radius: 0.25em;
+    }
+    #input_10_1 label {
+        display: none;
+    }
+    @media (min-width: 40em) {
+        .page-id-2188 .gform_wrapper ul.gform_fields li.gfield {}
+        imgmap {
+            margin-left: 2em;
+        }
+    }
+    .fill {
+        font-style: italic;
+        font-weight: 600;
+    }
+    .gform_wrapper {
+        ul li.gfield {
+            padding-top: 0;
+            color: white;
+            margin-bottom: 26px;
+        }
+        .gf_browser_chrome .gfield_checkbox li input,
+        .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
+        .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+            margin-top: 0 !important;
+        }
+        #tab-1 ul {
+            display: inline-block;
+        }
+        #gform_fields_10 {
+            display: block !important;
+        }
+        .top_label .gfield_label,
+        .gform_wrapper legend.gfield_label {
+            display: none !important;
+        }
+        input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+            height: 43px !important;
+            margin-bottom: 0;
+        }
+        input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder {
+            color: #727272 !important;
+        }
+        .gform_footer input.button,
+        .gform_wrapper .gform_footer input[type=submit],
+        .gform_wrapper .gform_page_footer input.button,
+        .gform_wrapper .gform_page_footer input[type=submit] {
+            padding: 1em 3em;
+        }
+        .gform_footer {
+            text-align: center;
+        }
+        li #field_10_7 {
+            color: white;
+            margin-top: 18px;
+        }
+
+        li #field_10_1{
+            margin-top: 12px;
+        }
+        #choice_10_8_1{
+            margin-top: 0;
+        }
+       
+    }
+}
+
+
+ 
+
+

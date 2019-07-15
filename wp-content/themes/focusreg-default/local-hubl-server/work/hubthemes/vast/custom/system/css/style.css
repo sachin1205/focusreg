@@ -3852,6 +3852,102 @@ img[name=pphLoggerImage] {
     float: right;
     width: 38%; } }
 
+/* Southbridge Towers  */
+.page-id-2188 .para {
+  color: #c13329; }
+
+.page-id-2188 .imgmap {
+  width: 22em;
+  border: 2px solid black;
+  padding-right: 1.5em;
+  padding-top: 1.5em; }
+
+.page-id-2188 .ptitle {
+  color: #c13329;
+  text-align: center;
+  font-size: 1.4em;
+  margin: 20px 48px; }
+
+.page-id-2188 hr {
+  margin: 3.5em 0 0;
+  border-bottom: 2px solid #000000; }
+
+.page-id-2188 .st-heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: #c13329;
+  margin-top: 40px;
+  font-family: initial;
+  margin-bottom: 0; }
+  @media (min-width: 40em) {
+    .page-id-2188 .st-heading {
+      font-size: 4.375em; } }
+
+.page-id-2188 .wpcf7,
+.page-id-2188 .gform_wrapper {
+  background-color: #727272;
+  padding: 1em 2em !important;
+  max-width: 73em !important;
+  overflow: hidden;
+  border-radius: 0.25em; }
+
+.page-id-2188 #input_10_1 label {
+  display: none; }
+
+@media (min-width: 40em) {
+  .page-id-2188 imgmap {
+    margin-left: 2em; } }
+
+.page-id-2188 .fill {
+  font-style: italic;
+  font-weight: 600; }
+
+.page-id-2188 .gform_wrapper ul li.gfield {
+  padding-top: 0;
+  color: white;
+  margin-bottom: 26px; }
+
+.page-id-2188 .gform_wrapper .gf_browser_chrome .gfield_checkbox li input,
+.page-id-2188 .gform_wrapper .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
+.page-id-2188 .gform_wrapper .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+  margin-top: 0 !important; }
+
+.page-id-2188 .gform_wrapper #tab-1 ul {
+  display: inline-block; }
+
+.page-id-2188 .gform_wrapper #gform_fields_10 {
+  display: block !important; }
+
+.page-id-2188 .gform_wrapper .top_label .gfield_label,
+.page-id-2188 .gform_wrapper .gform_wrapper legend.gfield_label {
+  display: none !important; }
+
+.page-id-2188 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  height: 43px !important;
+  margin-bottom: 0; }
+
+.page-id-2188 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder {
+  color: #727272 !important; }
+
+.page-id-2188 .gform_wrapper .gform_footer input.button,
+.page-id-2188 .gform_wrapper .gform_wrapper .gform_footer input[type=submit],
+.page-id-2188 .gform_wrapper .gform_wrapper .gform_page_footer input.button,
+.page-id-2188 .gform_wrapper .gform_wrapper .gform_page_footer input[type=submit] {
+  padding: 1em 3em; }
+
+.page-id-2188 .gform_wrapper .gform_footer {
+  text-align: center; }
+
+.page-id-2188 .gform_wrapper li #field_10_7 {
+  color: white;
+  margin-top: 18px; }
+
+.page-id-2188 .gform_wrapper li #field_10_1 {
+  margin-top: 12px; }
+
+.page-id-2188 .gform_wrapper #choice_10_8_1 {
+  margin-top: 0; }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
